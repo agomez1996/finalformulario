@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilos1.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <br>
+        <h1 class="titulos">FORMULARIO</h1>
+        <hr>
+        <P>De acuerdo con la ley de Newton para la gravitación universal, la fuerza de atracción entre dos cuerpos está dada por:</P>
+        <img src="form.png" alt="" class="imagen1">
+        <p>Donde m1 y m2 son las masas de los cuerpos, r es la distancia entre los cuerpos y G=6.67*10^-11 N-m^2/kg^2 es la constante gravitacional universal.
+            <br>Determine cuántas veces la fuerza de atracción entre el sol y la tierra es mayor que la fuerza de atracción entre la tierra y la luna.
+            La distancia entre el sol y la tierra es 149.6*10^9 m, la distancia entre la luna y la tierra es 384.4*10^6 m,
+            <br>m(earth)=5.98*10^28 kg.
+            <br>m(sun)=2.0*10^30 kg.
+            <br>m(moon)=7.36*10^22 kg.
+        </p>
+    </section>
+    <h1 class="titulos">FUERZA DE ATRACCION DE LA TIERRA CON EL SOL</h1>
+    <div class="respuesta">
+        <label for="">Introduce un valor para m(sun), la parte entera con dos decimales :</label>
+        <input type="number" id="ms" class="respuesta1">
+        <br>
+        <button onclick="fuerza()" class="">calcular</button>
+    </div>
+    <h2 class="titulos">Respuesta</h2>
+    <div id="fu" class="respuesta1"></div>
+    <br>
+    <h1 class="titulos">FUERZA DE ATRACCION DE LA TIERRA CON LA LUNA</h1>
+    <div class="respuesta">
+        <label for="">Introduce un valor para m(moon), la parte entera con dos decimales :</label>
+        <input type="number" id="ml" class="respuesta1">
+        <br>
+        <button onclick="fuerzalun()" class="">calcular</button>
+    </div>
+    <h2 class="titulos">Respuesta</h2>
+    <div id="funl" class="respuesta1"></div>
+    
+</body>
+<SCript src="jv/proceso.js"></SCript>
+<script src="jv/proceso1.js"></script>
+</html>
